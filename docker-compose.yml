@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  slack-template-server:
+    build: .
+    ports:
+      - "40363:40363"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
