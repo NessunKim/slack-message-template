@@ -1,5 +1,5 @@
-# Use Node 20 base image
-FROM node:20-alpine AS base
+# Use Node 22 base image
+FROM node:22-alpine AS base
 WORKDIR /app
 
 # Enable Corepack and set Yarn version
