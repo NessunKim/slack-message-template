@@ -74,7 +74,7 @@ fastify.post("/slack/template", async (request, reply) => {
 
 // Load templates from file before starting the server
 loadTemplates().then(() => {
-  fastify.listen({ port: 40363 }, (err, address) => {
+  fastify.listen({ host: "0.0.0.0", port: 40363 }, (err, address) => {
     if (err) throw err;
     console.log(`Server listening at ${address}`);
   });
